@@ -1,6 +1,4 @@
-##This Directory is for *ALX-SE* project##
-
-`0x00-shell_basics` contains *19 tasks.* 14 of which is mandatory while the 5 remnants is advanced tasks. Which means 19 files will be created viz:
+`shell_basics` contains *19 tasks.* 14 of which is mandatory while the 5 remnants is advanced tasks. Which means 19 files will be created viz:
 
 
 0. 0-current_working_directory
