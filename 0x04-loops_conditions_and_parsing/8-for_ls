@@ -4,8 +4,8 @@
 #In a list format
 #Where only the part of the name after the first dash is displayed (refer to the example)
 
-list=$(ls)
-for content in $list;
+list="$(ls)"
+for content in $list
 do
 	echo "$content" | cut -d '_' -f2
 done
