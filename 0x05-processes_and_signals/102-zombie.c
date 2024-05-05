@@ -7,7 +7,7 @@
 /**
  * infinite_while - a function to put the zombie function in infinite loop.
  *
- * Return 0
+ * Return: 0
  */
 
 int infinite_while(void)
@@ -18,6 +18,13 @@ int infinite_while(void)
     }
     return (0);
 }
+
+/**
+ *
+ * main - A program that creates 5 zombie processes
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
