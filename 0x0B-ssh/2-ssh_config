@@ -1,0 +1,7 @@
+# my `SSH` configuration
+
+Host	freeman
+	Hostname	52.201.220.109
+	PasswordAuthentication	no
+	IdentityFile	~/.ssh/school
+	User	ubuntu
