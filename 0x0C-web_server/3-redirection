@@ -1,18 +1,10 @@
 #!/usr/bin/env bash
-# redirection /redirect_me
-apt-get update
-apt-get -y install nginx
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-echo "server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-    root   /var/www/html;
-    index  index.html index.htm index.nginx-debian.html;
+#install nginx and put hello world inside
 
-    server_name _;
+redir="\\\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n"
 
-    location /redirect_me {
-        return 301 http://fusedtc.tech/;
-    }
-}" > /etc/nginx/sites-available/default
-service nginx restart
+sudo apt-get update
+sudo apt-get install nginx -y
+echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+sudo sed -i "30i $redir" /etc/nginx/sites-available/default
+sudo service nginx start
