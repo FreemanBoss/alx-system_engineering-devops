@@ -2,5 +2,5 @@
 # Configures an Nginx server to listen on port 80.
 
 sudo lsof -i :80
-sudo fuser -k 80/tcp
+sudo fuser -9 80/tcp
 service nginx restart
