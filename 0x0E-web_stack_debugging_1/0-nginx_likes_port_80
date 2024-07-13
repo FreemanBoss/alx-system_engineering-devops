@@ -3,7 +3,6 @@
 # Requirements:
 # Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
 # Write a Bash script that configures a server to the above requirements
-
-sudo lsof -i :80
-sudo fuser -k 80/tcp
-service nginx start
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
