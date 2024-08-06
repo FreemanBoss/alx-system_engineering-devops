@@ -1,6 +1,6 @@
 #  Automate the task of creating a custom HTTP header response, but with Puppet.
 exec { 'update':
-  command  => 'sudo apt-get update',
+  command => 'sudo apt-get update',
   provider => shell,
 }
 -> package {'nginx':
