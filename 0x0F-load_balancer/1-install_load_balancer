@@ -17,6 +17,6 @@ echo "
    balance roundrobin
    option httpclose
    option forwardfor
-   server 181854-web-01  check
-   server 181854-web-02  check
+   server 424308-web-01  check
+   server 424308-web-02  check
 " >> /etc/haproxy/haproxy.cfg
